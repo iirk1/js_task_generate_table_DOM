@@ -359,11 +359,12 @@ const dashboard = document.querySelector('.dashboard');
 for (let person of people) {
   const row = document.createElement('tr');
 
-  if (person.sex === 'm') {
-    person.sex = 'Male';
-  }
   if (person.sex === 'f') {
     person.sex = 'Female';
+  }
+
+  if (person.sex === 'm') {
+    person.sex = 'Male';
   }
 
   const nameColumn = document.createElement('td');
